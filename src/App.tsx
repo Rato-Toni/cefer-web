@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import viteLogo from '/vite.svg'
 import Aulas from './views/Aulas'
+import Sobre from './views/Sobre'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="aulas" element={<Aulas/>}/>
+        <Route path="sobre" element={<Sobre/>}/>
       </Routes>
     </BrowserRouter>
     // <>
