@@ -1,0 +1,45 @@
+.centro-esportivo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.centro-esportivo h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.centro-esportivo ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+.centro-esportivo li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .centro-esportivo {
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .centro-esportivo h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .centro-esportivo ul {
+    margin-left: 15px;
+  }
+
+  .centro-esportivo li {
+    margin-bottom: 5px;
+  }
+}
