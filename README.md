@@ -35,7 +35,7 @@ This project is open for contributions. If you want to contribute, please read t
 
 ## License
 
-This project is currently under the [AGPL-3.0](LICENSE) license.
+This project is currently under the [AGPL-3.0](LICENSE.md) license.
 
 ## Roadmap
 
