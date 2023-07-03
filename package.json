@@ -32,7 +32,6 @@
     "rules": {
       "no-nested-ternary": "error",
       "no-unneeded-ternary": "error",
-      "spaced-comment": "error",
       "prettier/prettier": "error",
       "import/no-default-export": "off",
       "import/order": [
@@ -52,7 +51,15 @@
             "caseInsensitive": true
           }
         }
-      ]
+      ],
+      "spaced-comment": [
+        "error",
+        "always",
+        {
+          "exceptions": ["*", "/"]
+        }
+      ],
+      "@next/next/no-img-element": "off"
     }
   },
   "dependencies": {
