@@ -56,7 +56,13 @@
         "error",
         "always",
         {
-          "exceptions": ["*", "/"]
+          "markers": [
+            "/"
+          ],
+          "exceptions": [
+            "*",
+            "/"
+          ]
         }
       ],
       "@next/next/no-img-element": "off"
@@ -69,6 +75,7 @@
     "next": "~13.4",
     "react": "~18.2",
     "react-dom": "~18.2",
+    "react-icons": "^4.10.1",
     "typescript": "~5.1"
   },
   "devDependencies": {

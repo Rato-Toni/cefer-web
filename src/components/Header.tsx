@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useCallback, useState } from 'react'
+import { IoClose, IoMenu } from 'react-icons/io5'
 
 import { styled } from '@panda/jsx'
 
@@ -39,6 +41,9 @@ const navItems = [
 ]
 export const Header = () => {
   const pathname = usePathname()
+  const [navOpen, setNavOpen] = useState<boolean>(false)
+
+  const toggleNav = useCallback(() => setNavOpen((state) => !state), [setNavOpen])
 
   return (
     <HeaderContainer>
@@ -55,7 +60,26 @@ export const Header = () => {
               </HeaderNavigationListItem>
             ))}
           </HeaderNavigationList>
+          <HeaderSideNavToggle>
+            <IoMenu size={32} color="white" onClick={toggleNav} />
+          </HeaderSideNavToggle>
         </HeaderNavigation>
+        <HeaderSideNavContainer data-show={navOpen ? 'true' : 'false'}>
+          <HeaderSideNavButtonRow>
+            <HeaderSideNavCloseButton>
+              <IoClose size={32} color="black" onClick={toggleNav} />
+            </HeaderSideNavCloseButton>
+          </HeaderSideNavButtonRow>
+          <HeaderSideNavList>
+            {navItems.map(({ label, href, enabled }) => (
+              <HeaderSideNavListItem key={label} data-active={href === pathname}>
+                <Link href={enabled ? href : '#'}>
+                  <span>{label}</span>
+                </Link>
+              </HeaderSideNavListItem>
+            ))}
+          </HeaderSideNavList>
+        </HeaderSideNavContainer>
       </HeaderContent>
       <HeaderDecoration />
     </HeaderContainer>
@@ -125,10 +149,37 @@ const HeaderNavigation = styled('nav', {
 
 const HeaderNavigationList = styled('ul', {
   base: {
-    display: 'flex',
+    display: 'none',
     flexDirection: 'row',
     listStyle: 'none',
     alignItems: 'center',
+
+    md: {
+      display: 'flex',
+    },
+  },
+})
+
+const HeaderSideNavToggle = styled('button', {
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+
+    transition: 'all 0.1s ease-in-out',
+
+    '&:hover': {
+      opacity: 0.9,
+    },
+
+    '&:active': {
+      opacity: 0.8,
+    },
+
+    md: {
+      display: 'none',
+    },
   },
 })
 
@@ -165,6 +216,112 @@ const HeaderNavigationListItem = styled('li', {
 
     '&[data-active="true"]': {
       borderBottomColor: 'white',
+    },
+  },
+})
+
+const HeaderSideNavContainer = styled('div', {
+  base: {
+    position: 'fixed',
+    top: '0',
+    left: '-100vw',
+    width: '100vw',
+    height: '100vh',
+    zIndex: '1000',
+    overflowY: 'auto',
+
+    background: '#fefefe',
+    color: 'black',
+
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+
+    transition: 'all 0.2s ease-in-out',
+
+    '&[data-show="true"]': {
+      left: '0',
+    },
+
+    md: {
+      display: 'none',
+    },
+  },
+})
+
+const HeaderSideNavButtonRow = styled('div', {
+  base: {
+    display: 'flex',
+    flexDirection: 'row-reverse',
+    padding: '24px',
+    width: '100%',
+
+    mb: '24px',
+  },
+})
+
+const HeaderSideNavList = styled('ul', {
+  base: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    listStyle: 'none',
+    padding: '0',
+    margin: '0',
+    width: '100%',
+  },
+})
+
+const HeaderSideNavListItem = styled('li', {
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    minHeight: '48px',
+    width: '100%',
+    padding: '24px',
+
+    fontSize: '16px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    userSelect: 'none',
+
+    transition: 'all 0.1s ease-in-out',
+
+    '&:hover': {
+      background: 'rgba(0, 0, 0, 0.05)',
+    },
+
+    '&:active': {
+      background: 'rgba(0, 0, 0, 0.1)',
+    },
+
+    '& span': {
+      py: '1px',
+    },
+
+    '&[data-active="true"] span': {
+      borderBottom: 'black 2px solid',
+    },
+  },
+})
+
+const HeaderSideNavCloseButton = styled('button', {
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+
+    transition: 'all 0.1s ease-in-out',
+
+    '&:hover': {
+      opacity: 0.9,
+    },
+
+    '&:active': {
+      opacity: 0.8,
     },
   },
 })
