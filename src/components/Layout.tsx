@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { styled } from '@panda/jsx'
 
@@ -12,6 +13,7 @@ export function Layout({ children }: LayoutProps) {
     <Container>
       <Header />
       <Main>{children}</Main>
+      <Footer />
     </Container>
   )
 }
@@ -32,7 +34,7 @@ const Main = styled('main', {
     flexDirection: 'column',
     alignItems: 'center',
     flex: 1,
-    minHeight: '100%',
+    minHeight: '100vh',
     minWidth: '100%',
     mt: 'header',
   },
