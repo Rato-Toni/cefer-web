@@ -64,8 +64,8 @@ export function Carousel({ elements = [] }: CarouselProps) {
       {(title || description) && (
         <CarouselTextContainer>
           <CarouselText>
-            <h6>Title</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum</p>
+            <h6>{title}</h6>
+            <p>{description}</p>
           </CarouselText>
         </CarouselTextContainer>
       )}

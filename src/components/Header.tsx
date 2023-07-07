@@ -14,8 +14,8 @@ const navItems = [
     enabled: true,
   },
   {
-    label: 'Sobre',
-    href: '/sobre',
+    label: 'Como Funciona',
+    href: '/como-funciona',
     enabled: false,
   },
   {
@@ -24,13 +24,13 @@ const navItems = [
     enabled: false,
   },
   {
-    label: 'Reservas',
-    href: '/reservas',
+    label: 'Reservas e Aulas',
+    href: '/reservas-aulas',
     enabled: false,
   },
   {
-    label: 'Aulas',
-    href: '/aulas',
+    label: 'Notícias',
+    href: '/noticias',
     enabled: false,
   },
   {

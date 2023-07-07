@@ -1,0 +1,190 @@
+{
+  "data": {
+    "id": 2,
+    "attributes": {
+      "createdAt": "2023-07-07T02:26:26.949Z",
+      "updatedAt": "2023-07-07T02:37:12.396Z",
+      "publishedAt": "2023-07-07T02:36:55.500Z",
+      "locale": "pt-BR",
+      "about": {
+        "id": 2,
+        "title": "Sobre",
+        "content": "A história do CEFER, Centro de Educação Física, Esportes e Recreação da USP São Carlos, inicia-se por volta da década de 70. Neste período, a atividade esportiva era considerada matéria obrigatória dentro da grade curricular dos cursos de Graduação, ministrada por professores de Educação Física do Centro de Atividade Esportiva (CAE - antiga nomenclatura), além de oferecida como atividade extracurricular.\n\nCom o passar dos anos e o estabelecimento de novas leis, as aulas tidas como obrigatórias passaram a ser consideradas optativas, até chegarem à completa extinção. A partir daí, o CAE passa a contar com nova localidade, mais profissionais e recebe uma outra denominação: CEFER, Centro de Educação Física, Esportes e Recreação.\n\nHoje, com uma infraestrutura grande no Campus da USP São Carlos, onde alunos, funcionários e dependentes podem usufruir atividades esportivas, recreativas e lazer, o CEFER conta com cinco quadras, duas piscinas, academia de musculação, campo de futebol, quiosque, um Ginásio de Esportes com quadra poliesportiva e capacidade para 1300 pessoas e um Salão de Eventos, com 1405 m2.",
+        "picture": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "name": "Selection_117.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 450,
+              "height": 451,
+              "formats": {
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                  "hash": "thumbnail_Selection_117_87e09639bd",
+                  "mime": "image/png",
+                  "name": "thumbnail_Selection_117.png",
+                  "path": null,
+                  "size": 41.92,
+                  "width": 156,
+                  "height": 156
+                }
+              },
+              "hash": "Selection_117_87e09639bd",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 79.99,
+              "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-07-07T02:14:03.863Z",
+              "updatedAt": "2023-07-07T02:26:52.128Z"
+            }
+          }
+        }
+      },
+      "rules": {
+        "id": 2,
+        "title": "Regras",
+        "items": [
+          {
+            "id": 4,
+            "description": "Fazer parte da comunidade USP: alunos, funcionários e dependentes.",
+            "icon": {
+              "data": {
+                "id": 1,
+                "attributes": {
+                  "name": "Selection_117.png",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 450,
+                  "height": 451,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".png",
+                      "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                      "hash": "thumbnail_Selection_117_87e09639bd",
+                      "mime": "image/png",
+                      "name": "thumbnail_Selection_117.png",
+                      "path": null,
+                      "size": 41.92,
+                      "width": 156,
+                      "height": 156
+                    }
+                  },
+                  "hash": "Selection_117_87e09639bd",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "size": 79.99,
+                  "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                  "previewUrl": null,
+                  "provider": "local",
+                  "provider_metadata": null,
+                  "createdAt": "2023-07-07T02:14:03.863Z",
+                  "updatedAt": "2023-07-07T02:26:52.128Z"
+                }
+              }
+            }
+          },
+          {
+            "id": 6,
+            "description": "Identificar-se na portaria com o cartão USP.",
+            "icon": {
+              "data": {
+                "id": 1,
+                "attributes": {
+                  "name": "Selection_117.png",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 450,
+                  "height": 451,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".png",
+                      "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                      "hash": "thumbnail_Selection_117_87e09639bd",
+                      "mime": "image/png",
+                      "name": "thumbnail_Selection_117.png",
+                      "path": null,
+                      "size": 41.92,
+                      "width": 156,
+                      "height": 156
+                    }
+                  },
+                  "hash": "Selection_117_87e09639bd",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "size": 79.99,
+                  "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                  "previewUrl": null,
+                  "provider": "local",
+                  "provider_metadata": null,
+                  "createdAt": "2023-07-07T02:14:03.863Z",
+                  "updatedAt": "2023-07-07T02:26:52.128Z"
+                }
+              }
+            }
+          },
+          {
+            "id": 5,
+            "description": "Seguir as regras de uso das quadras.",
+            "icon": {
+              "data": {
+                "id": 1,
+                "attributes": {
+                  "name": "Selection_117.png",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 450,
+                  "height": 451,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".png",
+                      "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                      "hash": "thumbnail_Selection_117_87e09639bd",
+                      "mime": "image/png",
+                      "name": "thumbnail_Selection_117.png",
+                      "path": null,
+                      "size": 41.92,
+                      "width": 156,
+                      "height": 156
+                    }
+                  },
+                  "hash": "Selection_117_87e09639bd",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "size": 79.99,
+                  "url": "https://www.pngmart.com/files/15/Happy-Face-Emoji-PNG-Pic.png",
+                  "previewUrl": null,
+                  "provider": "local",
+                  "provider_metadata": null,
+                  "createdAt": "2023-07-07T02:14:03.863Z",
+                  "updatedAt": "2023-07-07T02:26:52.128Z"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "news": {
+        "id": 2,
+        "title": "Notícias"
+      },
+      "carousel": {
+        "id": 2,
+        "items": []
+      },
+      "alerts": {
+        "id": 2,
+        "alert": null
+      },
+      "localizations": {
+        "data": []
+      }
+    }
+  },
+  "meta": {}
+}
